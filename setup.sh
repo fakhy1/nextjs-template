@@ -4,12 +4,12 @@ echo ">>> Setting up project..."
 echo ""
 
 # Check if .env.local exists
-if [ ! -f .env.local ]; then
-  echo ">>> Creating .env.local from .env.example..."
-  cp .env.example .env.local
-  echo ">>> .env.local created"
+if [ ! -f .env ]; then
+  echo ">>> Creating .env from .env.example..."
+  cp .env.example .env
+  echo ">>> .env created"
 else
-  echo ">>>  .env.local already exists"
+  echo ">>>  .env already exists"
 fi
 
 echo ""
@@ -31,7 +31,7 @@ echo ">>> Next steps:"
 echo "  1. Access MinIO Console at http://localhost:9001"
 echo "     - Username: minioadmin"
 echo "     - Password: minioadmin123"
-echo "  2. Create a bucket named 'uploads'"
-echo "  3. Update BETTER_AUTH_SECRET in .env.local"
+echo "  2. Create a bucket named 'nextjs-uploads'"
+echo "  3. Update BETTER_AUTH_SECRET in .env"
 echo "  4. Run 'bun run dev' to start the development server"
 echo ""
