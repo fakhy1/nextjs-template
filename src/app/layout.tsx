@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevNeed",
-  description: "DevNeed - Next.js application with Auth, DB, and Storage",
+  title: "NextJs - Starter Template",
+  description: "Next.js application with Auth, DB, and Storage",
 };
 
 export default function RootLayout({
