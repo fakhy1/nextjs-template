@@ -1,10 +1,12 @@
 import Link from "next/link";
-import { ExampleAuth } from "@/components/example-auth";
+import SiteHeader from "@/components/site-header";
 
 const GITHUB_REPO = "https://github.com/faksul/nextjs-template.git";
 
 export default function Home() {
   return (
+    <>
+    <SiteHeader />
     <div className="min-h-screen bg-linear-to-b from-zinc-50 to-zinc-100 dark:from-zinc-950 dark:to-zinc-900">
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto space-y-12">
@@ -94,11 +96,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Example Auth Component */}
-          <div className="flex justify-center">
-            <ExampleAuth />
-          </div>
-
           {/* Getting Started */}
           <div className="prose prose-zinc dark:prose-invert max-w-none">
             <h2 className="text-2xl font-semibold mb-4">Getting Started</h2>
@@ -132,5 +129,6 @@ export default function Home() {
         </div>
       </main>
     </div>
+    </>
   );
 }
