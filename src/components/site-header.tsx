@@ -6,11 +6,9 @@ import { Button } from "./ui/button";
 
 export default function SiteHeader() {
   const router = useRouter();
-  const { data: session, isPending } = useSession();
+  const { data: session } = useSession();
 
-  if (isPending) {
-    return <div className="p-2 h-14 bg-accent border-b animate-pulse" />;
-  }
+
   return (
     <header className="p-2 h-14 bg-accent border-b">
       <div className="flex items-center justify-between max-w-5xl mx-auto">
