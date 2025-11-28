@@ -10,7 +10,7 @@ export default function SiteHeader() {
   const { data: session } = useSession();
 
   return (
-    <header className="p-2 h-14 bg-accent border-b">
+    <header className="sticky top-0 z-50 p-2 h-14 bg-accent/50 border-b">
       <div className="flex items-center justify-between max-w-5xl mx-auto">
         <div className="py-1 px-2.5 bg-primary text-primary-foreground rounded-md">
           N
