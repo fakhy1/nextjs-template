@@ -63,6 +63,7 @@ export default function Register() {
           id="password"
           name="password"
           placeholder="*******"
+          autoComplete="new-password"
         />
       </div>
       <Button type="submit" disabled={isLoading} className="w-full">

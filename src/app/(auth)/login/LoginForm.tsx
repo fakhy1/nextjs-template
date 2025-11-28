@@ -1,6 +1,7 @@
 "use client";
 
 import { Loader2Icon } from "lucide-react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -47,12 +48,18 @@ export default function LoginForm() {
         />
       </div>
       <div className="space-y-2">
-        <Label htmlFor="password">Password</Label>
+        <div className="flex items-center justify-between">
+          <Label htmlFor="password">Password</Label>
+          <Link href="#" className="text-sm text-center underline">
+            Forget Password
+          </Link>
+        </div>
         <Input
           type="password"
           id="password"
           name="password"
           placeholder="*******"
+          autoComplete="new-password"
         />
       </div>
       <Button type="submit" disabled={isLoading} className="w-full">

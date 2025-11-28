@@ -10,9 +10,6 @@ export default function LoginPage() {
       </div>
       <LoginForm />
       <div className="text-center">
-        <Link href="#" className="text-muted-foreground text-sm text-center underline">
-          Forget Password
-        </Link>
         <p className="text-muted-foreground text-sm text-center">
           Don&apos;t have an account?{" "}
           <Link href="/register" className="underline">
@@ -21,5 +18,5 @@ export default function LoginPage() {
         </p>
       </div>
     </div>
-  )
+  );
 }
