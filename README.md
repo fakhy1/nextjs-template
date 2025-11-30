@@ -46,7 +46,7 @@ This will start:
 Copy the example environment file:
 
 ```bash
-cp .env.example .env.local
+cp .env.example .env
 ```
 
 Update `.env.local` with your configuration. For development, the default values should work.
